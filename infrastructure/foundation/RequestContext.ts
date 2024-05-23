@@ -11,8 +11,11 @@ interface RequestId {
   value: string;
 }
 
+//ToDo: achieve distributed transaction in varied database in two-phase commit way
 interface DBOptions {
   session?: mongoose.ClientSession;
+  transaction?: InstanceType<any>; //It's reserved for MySQL's transaction
+  multi?: InstanceType<any>; //  //It's reserved for Redis transaction
 }
 
 export interface IRequestContext {
