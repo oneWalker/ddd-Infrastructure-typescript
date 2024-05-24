@@ -26,7 +26,7 @@ export class Redis implements SystemService {
   }
 
   private getNodes() {
-    const nodes = [];
+    const nodes:any[] = [];
     this.url.split(",").forEach((v) => {
       const s = v.split(":");
       nodes.push({ host: s[0], port: s[1] });

@@ -1,3 +1,4 @@
+// a general simple logger information include server name
 import Logger from "logger_nodejs-lib";
 
 const LOGGING_LEVEL = process.env.LOGGING_LEVEL;
